@@ -5,7 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, Callb
 
 # Environment Variables
 TOKEN = os.getenv("BOT_TOKEN")
-MUSIC_BOT_USER = os.getenv("MUSIC_BOT_USER", "shwe_mm_music_bot")
+MUSIC_BOT_USER = os.getenv("MUSIC_BOT_USER", "HANTHAR1999_bot")
 OWNER_ID = os.getenv("OWNER_ID", "khithlain")
 
 # --- Fortune စာသား ၁၅၀ ---
@@ -235,7 +235,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     welcome_text = (
         f"✨ မင်္ဂလာပါ {user_mention}✨\n\n"
-        "◈ ကြိုဆိုပါတယ် 🙏 ပျော်ရွင်ခြင်း (shwemm)မှာ😘\n\n"
+        "◈ ကြိုဆိုပါတယ် ကျွန်တော် ဘော့ကနေ😘\n\n"
         "➤ သင့်ရဲ့ ကံကြမ္မာကို သိရှိနိုင်ဖို့ အောက်က ခလုတ်တွေကို အသုံးပြုနိုင်ပါတယ်ဗျာ။"
     )
     await update.message.reply_text(welcome_text, reply_markup=InlineKeyboardMarkup(keyboard))
@@ -281,14 +281,14 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
     elif query.data == "help":
         help_guide = (
-            "🇲🇲 SHWE MM ဗေဒင်လမ်းညွှန်\n\n"
+            "🇲🇲 ဗေဒင်လမ်းညွှန်\n\n"
             "🔮 ဗေဒင်မေးရန်: /readmyfortune\n"
             "💖 အချစ်ရေးမေးရန်: /readmylove\n"
             "🎵 Musicbot များ\n"
-            "➤ @SHWEMM_MUSIC1bot\n"
-            "➤ @SHWEMM_MUSIC2bot\n"
-            "➤ @SHWEMM_MUSIC3bot\n"
-            "➤ @SHWEMM_MUSIC4bot"
+            "➤ @HANTHAR1999_bot\n"
+            "➤ @PANDAMUSIC1_bot\n"
+            "➤ @SHWEMM_MUSICbot5\n"
+            "➤ @MUSIC_HELP9BOT"
         )
         await query.message.reply_text(help_guide, parse_mode="Markdown")
 
