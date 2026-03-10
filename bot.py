@@ -4,9 +4,9 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, CallbackQueryHandler
 
 # Environment Variables
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN ="8766352808:AAFplkSDEnlsBjPXmuW0zn0pB2myp9Xk8Cg"
 MUSIC_BOT_USER = os.getenv("MUSIC_BOT_USER", "HANTHAR1999_bot")
-OWNER_ID = os.getenv("OWNER_ID", "khithlain")
+OWNER_ID ="7936598488"
 
 # --- Fortune စာသား ၁၅၀ ---
 fortunes = [
